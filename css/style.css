@@ -7,27 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    background: #007F2D;
-}
-
 header {
-    position: absolute;
+    background: rgba(0,127,45,1);
+    display: block;
+    position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0px 30px;
+    -webkit-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.25); 
+    box-shadow: 0px 3px 10px 10px rgba(0,0,0,0.25);
 }
 
 header .logo {
@@ -50,6 +40,24 @@ header ul li a {
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.05em 0.15em 0.5em white
+}
+
+section {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: #007F2D;
 }
 
 .content {
@@ -264,6 +272,57 @@ header ul li a {
 
 }
 
+.container h2 {
+    margin-top: 10%;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+}   
+
+/* Products */
+.listProducts ul {
+    position: absolute;
+    text-align: center;
+    /* bottom: 20px;
+    transform: translateX(-50%); */
+}
+
+.listProducts ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 18px;
+    padding: 8px;
+}
+
+.listProducts ul .active, .listProducts ul li:hover  {
+    background: #007F2D;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* Location */
+
+.boxLocation {
+    width: 80%;
+    left: 10%;
+    height: 275px;
+    background:#fff;
+    border-radius: 2px;
+}
+
+
+/* .footer span {
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+} */
 
 
 
